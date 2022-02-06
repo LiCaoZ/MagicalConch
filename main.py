@@ -1,5 +1,7 @@
 import random,json
 
+version_num = "v0.0.1"
+
 # with open('data.json','r',encoding='utf8')as file:
 #     所有海螺的话 = json.load(file)
 # 一个计划中的外置语料库，目前直接内置在此文件中
@@ -38,6 +40,10 @@ import random,json
 
 random.shuffle(所有海螺的话) # 先打乱一下顺序，虽然本来就是乱的
 
+print("神奇海螺" + version_num + "\n")
+
 input("嗨，这里是神奇海螺。\n迷失的人啊，你有什么问题需要我的帮助吗？\n") # 先问再抽会显得有礼貌一点:)
 
 print(random.choice(所有海螺的话))
+
+input("回车以退出此程序，重新打开以再次咨询神奇的海螺。")
